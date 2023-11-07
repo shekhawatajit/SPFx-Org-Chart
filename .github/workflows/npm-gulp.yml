@@ -23,8 +23,8 @@ jobs:
 
     # Build the solution
     - name: Build solution
-      run: gulp bundle --ship
+      run: gulp bundle 
 
     # Package solution
     - name: Package
-      run: gulp package-solution --ship
+      run: gulp package-solution 
