@@ -28,3 +28,11 @@ jobs:
     # Package solution
     - name: Package
       run: gulp package-solution 
+
+    # Publish artifact
+    - name: Publish Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: sppkg-files
+        path: "**/*.sppkg"
+        if-no-files-found: error 
